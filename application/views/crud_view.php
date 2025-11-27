@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>CRUD View</title>
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     </head>
 <body>
 
@@ -21,8 +21,8 @@
         <thead>
             <tr>
                 <th>Item Name</th>
-                <th>Item Price</th>
-                <th>Item Quantity</th>
+                <th> Price</th>
+                <th> Quantity</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -41,8 +41,8 @@
                     <?php echo $it->quantity; ?>
                 </td>
                 <td>
-                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger" >Delete</a>
                 </td>
             </tr>
 
@@ -61,17 +61,35 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add New Item</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body">.
+        .
+        .
+        . 
+        . 
+        .
+        <!-- <form>
+            <div class="form-group">
+                <label for="itemName">Item Name</label>
+                <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+            </div>
+            <div class="form-group">
+                <label for="itemPrice">Item Price</label>
+                <input type="number" class="form-control" id="itemPrice" placeholder="Enter item price">
+            </div>
+            <div class="form-group">
+                <label for="itemQuantity">Item Quantity</label>
+                <input type="number" class="form-control" id="itemQuantity" placeholder="Enter item quantity">
+            </div>
+        </form> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Add Item</button>
       </div>
     </div>
   </div>
