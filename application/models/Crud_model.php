@@ -1,32 +1,22 @@
 <?php
 
 
-class Crud_model extends CI_Model {
+class Crud_model extends CI_Model
+{
 
     public function get_all_items()
     {
-       $query = $this->db->get('item');
-       
-       if($query){
-           return $query->result();
-       }
-       
+        $query = $this->db->get('item');
+
+        if ($query) {
+            return $query->result();
+        }
     }
 
-    
-    public function get_all_shops()
+
+    public function insertItem($data)
     {
-       $query = $this->db->get('shops');
-    
-       return $query->result();
-    
+
+        $this->db->insert('item', $data);
     }
-
 }
-
-
-
-    
-
-
-?>
