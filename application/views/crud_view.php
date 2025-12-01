@@ -66,13 +66,9 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">.
-        .
-        .
-        . 
-        . 
-        .
-        <!-- <form>
+      <div class="modal-body">
+        
+        <form>
             <div class="form-group">
                 <label for="itemName">Item Name</label>
                 <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
@@ -85,7 +81,7 @@
                 <label for="itemQuantity">Item Quantity</label>
                 <input type="number" class="form-control" id="itemQuantity" placeholder="Enter item quantity">
             </div>
-        </form> -->
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
