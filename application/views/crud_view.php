@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CRUD View</title>
+    <title>CRUD VIEW</title>
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     </head>
 <body>
@@ -15,14 +15,14 @@
 <div class="container">
     <div class="clear-fix">
         <h3 style="float: left;"> All Items </h3>
-        <a href="#" class="btn btn-success" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
+        <a href="#" class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
     </div>
     <table class="table table-bordered table-striped table-hover">
         <thead>
             <tr>
                 <th>Item Name</th>
-                <th> Price</th>
-                <th> Quantity</th>
+                <th>Price</th>
+                <th>Quantity</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -41,7 +41,7 @@
                     <?php echo $it->quantity; ?>
                 </td>
                 <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-success">Edit</a>
                     <a href="#" class="btn btn-danger" >Delete</a>
                 </td>
             </tr>
@@ -93,17 +93,18 @@
 
 
 
-<div class="container" style="margin-top: 100px;">
+<div class="container" style="margin-top: 80px;margin-bottom: 100px;">
     <div class="clear-fix">
-        <h3 style="float: left;"> All shops </h3>
-        <a href="#" class="btn btn-success" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
+        <h3 class="text-center"> All shops </h3>
+        <a href="#" class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
     </div>
     <table class="table table-bordered table-striped table-hover">
         <thead>
             <tr>
-                <th>shop id</th>
-                <th> shop name</th>
-                <th> state</th>
+                <th>Shop id</th>
+                <th>Shop name</th>
+                <th>Address</th>
+                <th>State</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -126,15 +127,13 @@
                     <?php echo $shop->state; ?>
                 </td>
                 <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
-                    <a href="#" class="btn btn-danger" >Delete</a>
+                    <a href="#" class="btn btn-success">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
 
             <?php endforeach; ?>
-           
-
-            
+             
         </tbody>
     </table>
 </div>
