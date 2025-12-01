@@ -93,6 +93,54 @@
 
 
 
+<div class="container" style="margin-top: 100px;">
+    <div class="clear-fix">
+        <h3 style="float: left;"> All shops </h3>
+        <a href="#" class="btn btn-success" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
+    </div>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>shop id</th>
+                <th> shop name</th>
+                <th> state</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+        <?php foreach($shops as $shop) : ?>
+
+            <tr>
+                <td>
+                    <?php echo $shop->id; ?>
+                </td>
+                <td>
+                    <?php echo $shop->shop_name; ?>
+                </td>
+                <td>
+                    <?php echo $shop->address; ?>
+                </td>
+                  <td>
+                    <?php echo $shop->state; ?>
+                </td>
+                <td>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger" >Delete</a>
+                </td>
+            </tr>
+
+            <?php endforeach; ?>
+           
+
+            
+        </tbody>
+    </table>
+</div>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
