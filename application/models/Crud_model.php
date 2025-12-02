@@ -54,4 +54,20 @@ class Crud_model extends CI_Model
             return false;
         }
     }
+
+    public function deleteItem($id){
+
+        $this->db->where('id',$id);
+        $query = $this->db->delete('item');
+
+        if($query){
+
+            return true;
+        }
+        else{
+
+            return false;
+        }
+    }
 }
+?>
