@@ -17,6 +17,41 @@ class Crud_model extends CI_Model
     public function insertItem($data)
     {
 
-        $this->db->insert('item', $data);
+       $query = $this->db->insert('item', $data);
+
+       if($query){
+
+        return true;
+       }
+       else{
+
+        return false;
+       }
+    }
+
+    public function getSingleItem($id){
+
+        $this->db->where('id',$id);
+        $query = $this->db->get('item');
+
+        if($query){
+
+            return $query->row();
+        }
+    }
+
+    public function updateItem($data, $id){
+
+        $this->db->where('id',$id);
+        $query = $this->db->update('item', $data);
+
+        if($query){
+
+            return true;
+        }
+        else{
+
+            return false;
+        }
     }
 }

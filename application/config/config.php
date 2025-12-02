@@ -29,7 +29,7 @@ $config['base_url'] = ($_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . "://
 /*
 |--------------------------------------------------------------------------
 | Index File
-|--------------------------------------------------------------------------
+|-------------------------------------------------------------------------- 
 |
 | Typically this will be your index.php file, unless you've renamed it to
 | something else. If you are using mod_rewrite to remove the page set this

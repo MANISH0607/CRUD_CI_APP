@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>CRUD VIEW</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/manish/CRUD_CI_APP/assets/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <div class="jumbotron">
-        <h1 align="center">CRUD CI APP</h1>
+<div class="jumbotron" style="background-color: lightgrey;margin: 20px; padding: 10px;">
+            <h1 align="center">CRUD CI APP</h1>
 
     </div>
 
     <div class="container">
         <div class="clear-fix">
             <h3 style="float: left;"> All Items </h3>
-            <a href="#" class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
+            <a href="#" class="btn btn-info" style="float: right;" data-toggle="modal" data-target="#exampleModal">Add New Item</a>
         </div>
         <table class="table table-bordered table-striped table-hover">
             <thead>
@@ -43,7 +43,7 @@
                             <?php echo $it->quantity; ?>
                         </td>
                         <td>
-                            <a href="#" class="btn btn-success">Edit</a>
+                            <a href="<?php echo base_url(); ?>crud/editItem/<?php echo $it->id; ?>" class="btn btn-success">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
@@ -95,10 +95,30 @@
 
 
     <?php if ($this->session->flashdata('error')): ?>
+
         <div class="bg-danger text-white p-3" align="center">
             <?php echo $this->session->flashdata('error'); ?>
         </div>
     <?php endif; ?>
+
+
+    <?php if ($this->session->flashdata('success')): ?>
+
+        <div class="bg-success text-white p-3" align="center">
+            <?php echo $this->session->flashdata('success'); ?>
+        </div>
+    <?php endif; ?>
+
+
+     <?php if ($this->session->flashdata('updated')): ?>
+
+        <div class="bg-success text-white p-3" align="center">
+            <?php echo $this->session->flashdata('updated'); ?>
+        </div>
+    <?php endif; ?>
+
+    
+
 
 
 
